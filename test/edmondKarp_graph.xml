@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!-- This is my Test file for writing a directed. For further information on how to write your 
+	 file for usage.  NOTE:  Make sure to take a look at my README.txt before writing your own  -->
+
+<!-- Author:  Jonathan Throne -->
+<workspace>
+    
+	<!-- Network Flow. Min cut. -->
+	<graph type= "edmonds_karp">
+	    
+		<vertices>
+			<vertex id= "A" />
+			<vertex id= "B" />
+			<vertex id= "C" />
+			<vertex id= "D" />
+		</vertices>
+		
+		<edges>
+		    <edge>
+				<source id= "A"/>
+				<sink id= "B"/>
+				<capacity value= "1000"/>
+			</edge>
+			
+			<edge>
+				<source id= "A"/>
+				<sink id= "C"/>
+				<capacity value= "1000"/>
+			</edge>
+			
+			<edge>
+				<source id= "B"/>
+				<sink id= "C"/>
+				<capacity value= "1"/>
+			</edge>
+
+			<edge>
+				<source id= "B"/>
+				<sink id= "D"/>
+				<capacity value= "1000"/>
+			</edge>
+	
+			<edge>
+				<source id= "C"/>
+				<sink id= "D"/>
+				<capacity value= "1000"/>
+			</edge>
+
+			<!--Reverse Edges Not needed unless you don't want the edmonds-karp algorithm
+			to create reverse edges for residual capacity...  
+			<edge>
+				<source id= "B"/>
+				<sink id= "A"/>
+				<capacity value= "20"/>
+			</edge>
+
+
+			<edge>
+				<source id= "C"/>
+				<sink id= "A"/>
+				<capacity value= "200"/>
+			</edge>
+
+
+			<edge>
+				<source id= "C"/>
+				<sink id= "B"/>
+				<capacity value= "5"/>
+			</edge>
+
+			<edge>
+				<source id= "D"/>
+				<sink id= "B"/>
+				<capacity value= "50"/>
+			</edge>
+
+			<edge>
+				<source id= "D"/>
+				<sink id= "C"/>
+				<capacity value= "50"/>
+			</edge> -->
+		</edges>
+		
+		<s_node id= "A"/>
+		<t_node id= "D"/>
+	</graph>
+	
+</workspace>

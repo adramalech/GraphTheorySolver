@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<workspace>
+
+<!--Shortest Path-->
+	<graph type= "dijkstra">
+
+		<vertices>
+			<vertex id= "A" />
+			<vertex id= "B" />
+			<vertex id= "C" />
+			<vertex id= "D" />
+			<vertex id= "E" />
+			<vertex id= "F" />
+		</vertices>
+
+		<edges>
+			<edge>
+				<source id= "A"/>
+				<sink id= "B"/>
+				<weight value= "2"/>
+			</edge>
+
+			<edge>
+				<source id= "A"/>
+				<sink id= "D"/>
+				<weight value= "5"/>
+			</edge>
+
+			<edge>
+				<source id= "A"/>
+				<sink id= "F"/>
+				<weight value= "6"/>
+			</edge>
+
+			<edge>
+				<source id= "B"/>
+				<sink id= "C"/>
+				<weight value= "8"/>
+			</edge>
+
+			<edge>
+				<source id= "B"/>
+				<sink id= "D"/>
+				<weight value= "6"/>
+			</edge>
+		
+			<edge>
+				<source id= "C"/>
+				<sink id= "D"/>
+				<weight value= "3"/>
+			</edge>
+
+			<edge>
+				<source id= "D"/>
+				<sink id= "E"/>
+				<weight value= "6"/>
+			</edge>
+
+			<edge>
+				<source id= "D"/>
+				<sink id= "F"/>
+				<weight value= "7"/>
+			</edge>
+			
+			<edge>
+				<source id= "E"/>
+				<sink id= "F"/>
+				<weight value= "2"/>
+			</edge>
+		</edges>
+
+		<s_node id= "A"/> 
+		<t_node id= "E"/>
+		
+	</graph>
+
+</workspace>
